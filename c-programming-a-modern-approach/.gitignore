@@ -1,0 +1,8 @@
+**/examples/**
+!**/examples/*.c
+
+**/exercises/**
+!**/exercises/*.c
+
+**/projects/**
+!**/projects/*.c
