@@ -1,3 +1,7 @@
+/*
+Write a program that formats product information entered by the user.
+*/
+
 #include <stdio.h>
 
 int main(void)

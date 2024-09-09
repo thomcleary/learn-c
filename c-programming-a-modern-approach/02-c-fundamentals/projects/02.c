@@ -1,4 +1,4 @@
-/* Computes volume of a sphere with 10 meter radius */
+/* Write a program that computes the volume of a sphere with 10 meter radius */
 
 #include <math.h>
 #include <stdio.h>

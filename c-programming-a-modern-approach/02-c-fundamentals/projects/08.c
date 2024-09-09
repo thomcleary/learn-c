@@ -1,5 +1,5 @@
-/* Calculates the remaining balance on a loan after the
-   first, second and third monthly payments
+/*
+Write a program that calculates the remaining balance on a loan after the first, second and third monthly payments
 */
 
 #include <stdio.h>

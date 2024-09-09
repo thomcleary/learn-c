@@ -1,3 +1,8 @@
+/*
+Modify the upc.c example so that it calculates the check digit for an EAN.
+The user will enter the first 12 digits of the EAN as a single number
+*/
+
 #include <stdio.h>
 
 int main(void)

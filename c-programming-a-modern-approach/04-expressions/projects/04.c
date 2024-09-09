@@ -1,6 +1,6 @@
 /*
-Display user entered integer in octal
-(Chapter 7 will introduce and easier way)
+Write a program that reads an integer entered by the user and displays it in octal
+(will use printf formatting in Chapter 7)
 */
 
 #include <stdio.h>

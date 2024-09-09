@@ -1,3 +1,7 @@
+/*
+Extend 01.c to handle three digit numbers
+*/
+
 #include <stdio.h>
 
 int main(void)

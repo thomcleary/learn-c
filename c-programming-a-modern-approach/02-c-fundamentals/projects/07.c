@@ -1,5 +1,7 @@
-/* Determines how to pay an amount with smallest number of
-   $20, $10, $5 and $1 dollar bills
+/*
+Write a program that asks the user to enter a U.S dollar amount
+and then shows how to pay that amount using the smallest number of
+$20, $20, $5, and $1 dollar bills
 */
 
 #include <stdio.h>

@@ -1,3 +1,8 @@
+/*
+Rewrite the upc.c example so that the user enters 11 digits at one time
+instead of entering one digit, then five, and then another five digits
+*/
+
 #include <stdio.h>
 
 int main(void)

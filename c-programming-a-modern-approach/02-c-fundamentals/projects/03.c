@@ -1,4 +1,4 @@
-/* Computes volume of a sphere */
+/* Modify 02.c so that it promts the user to enter the radius of a sphere */
 
 #include <math.h>
 #include <stdio.h>

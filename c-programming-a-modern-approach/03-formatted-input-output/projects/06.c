@@ -1,3 +1,8 @@
+/*
+Modify the addfrac.c example so that the user enters both the fractions at the same time
+separated by a plus sign
+*/
+
 #include <stdio.h>
 
 int main(void)

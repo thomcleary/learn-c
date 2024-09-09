@@ -1,3 +1,8 @@
+/*
+Rewrite 02.c so that it prints the reversal of a three-digit number
+without using arithemtic to split the numbers into digits
+*/
+
 #include <stdio.h>
 
 int main(void)

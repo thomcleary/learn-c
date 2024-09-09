@@ -1,4 +1,7 @@
-/* Calculates 3x^5 + 2x^4 - 5x^3 - x^2 + 7x - 6 using Horner's Rule */
+/*
+Modify 04.c so that the polynomial is evaluated using the following formula
+((((3x + 2)x - 5)x - 1)x + 7)x - 6
+*/
 
 #include <math.h>
 #include <stdio.h>
