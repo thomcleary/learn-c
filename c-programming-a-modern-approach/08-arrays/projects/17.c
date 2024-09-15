@@ -19,7 +19,7 @@ int main(void)
     printf("Enter size of magic square: ");
     scanf("%d", &size);
 
-    if (size < 1 || size % 2 == 0)
+    if (size < 1 || size > 99 || size % 2 == 0)
     {
         printf("Size must be an odd number between 1 and 99.\n");
         return 0;
