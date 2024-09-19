@@ -3,6 +3,7 @@
 
 **/exercises/**
 !**/exercises/*.c
+!**/exercises/*.md
 
 **/projects/**
 !**/projects/*.c
