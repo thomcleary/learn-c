@@ -1,10 +1,10 @@
-**/examples/**
-!**/examples/*.c
+*
 
-**/exercises/**
-!**/exercises/*.c
-!**/exercises/*.md
+!**/*.c
+!**/*.h
+!**/*.md
+!**/*.txt
+!**/Makefile
 
-**/projects/**
-!**/projects/*.c
-!**/projects/*.test.*
+# Allow all directories so you can track nested files
+!*/
