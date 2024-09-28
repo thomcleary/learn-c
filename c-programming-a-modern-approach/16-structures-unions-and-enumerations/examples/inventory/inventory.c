@@ -88,7 +88,7 @@ int find_part(int number)
 
 /**
  * Prompts the user for information about a new part and then inserts the part into the database.
- * Prints an error message and returns prematurely if the part alreadt exists or the database is full.
+ * Prints an error message and returns prematurely if the part already exists or the database is full.
  */
 void insert(void)
 {
@@ -105,7 +105,7 @@ void insert(void)
 
     if (find_part(part_number) >= 0)
     {
-        printf("Part alreadt exists.\n");
+        printf("Part already exists.\n");
         return;
     }
 
