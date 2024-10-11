@@ -4,6 +4,10 @@
 
 #include "hash_table.h"
 
+// Must be bigger than the size of the alphabet (in this case ASCII, so > 128)
+#define HT_PRIME_1 137
+#define HT_PRIME_2 263
+
 // NOTE: Tutorial skips NULL checks for allocations
 
 static ht_item *ht_new_item(const char *k, const char *v)
@@ -33,6 +37,13 @@ static int ht_hash(const char *s, const int a, const int m)
         hash = hash % m;
     }
     return (int)(hash);
+}
+
+static int ht_get_hash(const char *s, const int num_buckets, const int attempt)
+{
+    const int hash_a = ht_hash(s, HT_PRIME_1, num_buckets);
+    const int hash_b = ht_hash(s, HT_PRIME_2, num_buckets);
+    return (hash_a + (attempt * (hash_b + 1))) % num_buckets;
 }
 
 ht_hash_table *ht_new()
