@@ -16,7 +16,7 @@ Have the user specify the file name on the command line.
 void exit_failure(char *reason);
 void print_underline(int length);
 void print_heading(void);
-void print_buffer(char buffer[], size_t buffer_size, size_t num_read, unsigned int offset);
+void print_buffer(unsigned char buffer[], size_t buffer_size, size_t num_read, unsigned int offset);
 
 int main(int argc, char **argv)
 {
@@ -35,7 +35,7 @@ int main(int argc, char **argv)
 
     unsigned int offset = 0;
     const size_t buffer_size = 10;
-    char buffer[buffer_size];
+    unsigned char buffer[buffer_size];
     size_t num_read;
 
     while ((num_read = fread(buffer, sizeof(char), buffer_size, fp)) == buffer_size)
@@ -91,7 +91,7 @@ void print_heading(void)
     putchar('\n');
 }
 
-void print_buffer(char buffer[], size_t buffer_size, size_t num_read, unsigned int offset)
+void print_buffer(unsigned char buffer[], size_t buffer_size, size_t num_read, unsigned int offset)
 {
     printf("%*d", (int)strlen(OFFSET), offset);
     printf(" ");
