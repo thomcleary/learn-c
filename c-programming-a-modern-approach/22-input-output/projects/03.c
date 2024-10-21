@@ -10,6 +10,7 @@ Hint: Since it has no more than one file open at a time, fcat needs only a singl
 Once it's finished with a file, fcat can use the same variable when it opens the next file.
 */
 
+#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -44,21 +45,20 @@ int main(int argc, char **argv)
             }
         }
 
-        if (ferror(fp))
+        bool read_error = ferror(fp);
+        fclose(fp);
+
+        if (read_error)
         {
             fprintf(stderr, "Failed to read from file: %s\n", filename);
-            fclose(fp);
             exit(EXIT_FAILURE);
         }
 
         if (fwrite(buffer, sizeof(char), num_read, stdout) < num_read)
         {
             fprintf(stderr, "Failed to write all bytes read from file: %s\n", filename);
-            fclose(fp);
             exit(EXIT_FAILURE);
         }
-
-        fclose(fp);
     }
 
     return 0;

@@ -63,13 +63,14 @@ struct Counts get_counts(char *filename)
         }
     }
 
-    if (ferror(fp))
+    bool read_error = ferror(fp);
+    fclose(fp);
+
+    if (read_error)
     {
         fprintf(stderr, "Failed to read from file: %s\n", filename);
         exit(EXIT_FAILURE);
     }
-
-    fclose(fp);
 
     return counts;
 }
