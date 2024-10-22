@@ -44,6 +44,8 @@ int main(int argc, char **argv)
         exit_failure(decode ? "Failed to decode file" : "Failed to encode file");
     }
 
+    free(out_filename);
+
     return 0;
 }
 
