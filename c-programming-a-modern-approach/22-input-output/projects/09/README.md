@@ -1,4 +1,4 @@
-# Exercise 9
+# Project 9
 
 Write a program that merges two files containing part records stored by the `inventory.c` program (see `../08`).
 

@@ -1,4 +1,4 @@
-# Exercise 7
+# Project 7
 
 Of the many techniques for compressing the contents of a file, one of the simplest and fastest is known as run-length encoding.
 
