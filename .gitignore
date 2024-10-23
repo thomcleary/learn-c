@@ -1,0 +1,11 @@
+*
+
+!**/.gitignore
+!**/*.c
+!**/*.h
+!**/*.md
+!**/*.txt
+!**/Makefile
+
+# Allow all directories so you can track nested files
+!*/
