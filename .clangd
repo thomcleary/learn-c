@@ -1,3 +1,2 @@
 CompileFlags:
-  Add:
-    - -xc # Sets language to C
+  Add: [-xc, -Wall, -Werror]  # Sets language to C
