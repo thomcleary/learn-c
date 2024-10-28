@@ -1,0 +1,7 @@
+    02.c:
+        - This file has a lot of leading whitespace.
+
+
+              - Which will be removed by 02.c.
+
+    - Empty lines will also be removed.
