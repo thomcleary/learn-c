@@ -1,0 +1,4 @@
+This file will contain five sentences. Will my program count them correctly?
+The second sentence ended with a ?, the third sentence contains one but isn't counted as a sentence!
+This is the fourth sentence. And this is the fifth!
+

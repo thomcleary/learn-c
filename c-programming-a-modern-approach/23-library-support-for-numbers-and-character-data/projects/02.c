@@ -11,7 +11,7 @@ A lint consisting entirely of whitespace characters will not be copied.
 
 int main(void) {
   bool trim = true;
-  char ch;
+  int ch;
 
   while ((ch = getchar()) != EOF) {
     if (trim && !isspace(ch)) {

@@ -9,7 +9,7 @@ capitalizing the first letter in each word.
 
 int main(void) {
   bool in_space = true;
-  char ch;
+  int ch;
 
   while ((ch = getchar()) != EOF) {
     if (isspace(ch)) {
