@@ -8,7 +8,6 @@ A lint consisting entirely of whitespace characters will not be copied.
 #include <ctype.h>
 #include <stdbool.h>
 #include <stdio.h>
-#include <stdlib.h>
 
 int main(void) {
   bool trim = true;
